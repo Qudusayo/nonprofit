@@ -1,0 +1,98 @@
+@import "./../../styles/variables";
+
+.Footer {
+  background-color: $black;
+  padding: 5em 0;
+
+  &Container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    width: 85%;
+    margin: auto;
+  }
+
+  h2 {
+    color: $off-white;
+
+    a {
+      font-weight: 400;
+      font-size: 1.2em;
+    }
+  }
+
+  &Links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}
+
+.LinkList {
+  h2 {
+    font-size: 1.1em;
+    font-weight: 400;
+  }
+
+  ul {
+    padding-inline-start: 0;
+    list-style-type: none;
+
+    li {
+      margin: 2em 0;
+
+      a {
+        transition: color 0.2s linear;
+        color: $secondary-text;
+
+        &:hover {
+          color: $off-white;
+        }
+      }
+    }
+  }
+}
+
+.Subscribe {
+  margin-left: 4em;
+  justify-self: center;
+
+  h2 {
+    font-size: 2em;
+  }
+
+  div {
+    display: flex;
+    position: relative;
+    margin-top: 2em;
+
+    input {
+      outline: none;
+      border: 1px solid $border;
+      background-color: transparent;
+      color: $off-white;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      height: 45px;
+      font-size: 0.9em;
+      width: 70%;
+      padding: 0 1em;
+
+      &::placeholder {
+        color: $secondary-text;
+      }
+    }
+
+    button {
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      background-color: #ffffff;
+      color: $primary-text;
+      width: 30%;
+      height: 100%;
+      right: 3px;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+}

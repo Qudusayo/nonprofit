@@ -1,0 +1,51 @@
+@import "./../../styles/variables";
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 0.5em 5em;
+
+  h2 {
+    margin: 0;
+    color: #111111;
+    font-weight: 400;
+    font-size: 1.2em;
+  }
+
+  ul {
+    padding-inline-start: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 2em;
+
+    li {
+      a {
+        transition: color 0.3s linear;
+
+        &.navLink {
+          color: $secondary-text;
+
+          &:hover {
+            color: $black;
+          }
+        }
+
+        &.activeRoute {
+          color: $black;
+        }
+
+        &.donateButton {
+          background-color: $primary-text;
+          color: #ffffff;
+          border-radius: 4px;
+          padding: 0.5em 1.5em;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
