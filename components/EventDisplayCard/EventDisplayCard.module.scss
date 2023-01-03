@@ -1,0 +1,77 @@
+@import "./../../styles/variables";
+
+.EventDisplayCard {
+  display: flex;
+  // align-items: center;
+  padding: 2em 0;
+  justify-content: space-around;
+  background-color: $green-secondary;
+  border-radius: 8px;
+  height: 8em;
+  width: 100%;
+  color: $primary-text;
+
+  &Date {
+    flex: 0.5;
+    text-align: center;
+
+    h2 {
+      font-size: 2em;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    span {
+      font-size: 0.75em;
+      margin-left: -1.25em;
+    }
+  }
+
+  &Content {
+    flex: 1.2;
+
+    &Header {
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+      margin-bottom: 0.5em;
+
+      div {
+        border-bottom: 2px solid $primary-text;
+        width: 2em;
+      }
+
+      span {
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-size: 0.75em;
+      }
+    }
+
+    h3 {
+      word-spacing: 0.15em;
+    }
+  }
+
+  &Link {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    div {
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "./../../styles/variables";
+
+.DonationDisplayCard {
+  background: url("https://assets.website-files.com/61a3ad3365af7a7bfde3e595/61a3ad3365af7a12f7e3e5a1_blog-main-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(50, 50, 50, 0.65);
+  background-blend-mode: multiply;
+  width: 85%;
+  margin: 2em auto;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 6em 0;
+
+  h2 {
+    color: #ffffff;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  &Links {
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+
+    a {
+      font-size: 0.9em;
+      border-radius: 4px;
+      padding: 0.75em 1.5em;
+
+      &:nth-of-type(1) {
+        background-color: $green-primary;
+        color: #ffffff;
+        margin-right: 1em;
+      }
+
+      &:nth-last-of-type(1) {
+        background-color: #ffffff;
+        color: $primary-text;
+        margin-left: 1em;
+      }
+    }
+  }
+}
