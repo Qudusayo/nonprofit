@@ -1,0 +1,11 @@
+.section {
+  margin: 5em 0;
+
+  &News {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 85%;
+    margin: 3em auto;
+    gap: 1.5em;
+  }
+}

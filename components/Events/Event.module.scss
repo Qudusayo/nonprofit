@@ -1,0 +1,11 @@
+.section {
+  margin: 5em 0;
+
+  &Events {
+    display: flex;
+    flex: 1;
+    width: 85%;
+    margin: 3em auto;
+    gap: 1em;
+  }
+}

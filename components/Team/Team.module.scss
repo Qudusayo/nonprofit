@@ -1,0 +1,7 @@
+.Team {
+  width: 85%;
+  margin: 5em auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em 1.5em;
+}
